@@ -1,1 +1,10 @@
+All files in this directory are implementation of a data structure in Python 3.
 
+For ease of reading and record keeping, I am listing them down-
+1. Linked List (All operations)
+2. Stack
+3. Queue
+4. Priority Queue
+5. Double Ended Queue
+6. Double Linked List
+7. Circular Linked List
