@@ -8,3 +8,5 @@ For ease of reading and record keeping, I am listing them down-
 5. Double Ended Queue
 6. Double Linked List
 7. Circular Linked List
+8. Hashing for numerical and string values (Can be extended to Hash-Maps)
+9. Tree with BFS and DFS
