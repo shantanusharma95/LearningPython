@@ -4,7 +4,7 @@ For ease of reading and record keeping, I am listing them down-
 1. Linked List (All operations) - DONE
 2. Stack - DONE
 3. Queue - DONE
-4. Priority Queue
+4. Priority Queue - DONE
 5. Double Ended Queue
 6. Double Linked List
 7. Circular Linked List
@@ -25,4 +25,10 @@ reaches the size limit, but it will waste memory if stack grows too much but is 
 3. Queue ######
 
 -The time for insertion and deletion is O(1) and for displaying the queue elements is O(n)
+
+4. Priority Queue ######
+
+-The time for insertion is O(n) as comparison is done for priority of each element, but for deletion is O(1)
+-Imagine all elements with highest priority are on the left (tail) side and all with lower are towards right (head) side
+-Dequeuing is done at the left(tail) side
   
