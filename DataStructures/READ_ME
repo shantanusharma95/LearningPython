@@ -12,9 +12,13 @@ For ease of reading and record keeping, I am listing them down-
 9. Tree with BFS and DFS
 
 
-For my personal reference and future revisions, I am listing down more details about each implementation.
+For my personal reference and future revisions, I am listing down more details about each implementation. The bullet number below follows
+the bullet sequence as per the list above.
 
 2. Stack ######
+
 -I implemented it using linked list, it could have been done by array also.
--Arrays would limit the size of stack, and would now allow dynamic size increase (that can be overcome by array resizing once array 
+-Arrays would limit the size of stack, and would now allow dynamic size increase (that can be overcome by array resizing once array
+reaches the size limit, but it will waste memory if stack grows too much but is only larger marginally by the half of array size)
+-Linked list can grow and shrink as per need, but additional memory is used to maintain pointers to the next nodes
   
