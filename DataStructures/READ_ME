@@ -3,7 +3,7 @@ All files in this directory are implementation of a data structure in Python 3.
 For ease of reading and record keeping, I am listing them down-
 1. Linked List (All operations) - DONE
 2. Stack - DONE
-3. Queue
+3. Queue - DONE
 4. Priority Queue
 5. Double Ended Queue
 6. Double Linked List
@@ -21,4 +21,8 @@ the bullet sequence as per the list above.
 -Arrays would limit the size of stack, and would now allow dynamic size increase (that can be overcome by array resizing once array
 reaches the size limit, but it will waste memory if stack grows too much but is only larger marginally by the half of array size)
 -Linked list can grow and shrink as per need, but additional memory is used to maintain pointers to the next nodes
+
+3. Queue ######
+
+-The time for insertion and deletion is O(1) and for displaying the queue elements is O(n)
   
