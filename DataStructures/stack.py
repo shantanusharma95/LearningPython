@@ -54,18 +54,6 @@ class stack:
             print(temp.data)
             temp=temp.next
 
-class linked_list:
-
-    #display the entire linked list
-    def display(self):
-        temp=self.Head
-        if temp==None:
-            print("List is empty!")
-            return
-        while(temp!=None):
-            print(temp.data)
-            temp=temp.next
-
 def main():
     stackObj=stack()
     while(True):
