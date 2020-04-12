@@ -5,9 +5,10 @@ For ease of reading and record keeping, I am listing them down-
 2. Stack - DONE
 3. Queue - DONE
 4. Priority Queue - DONE
-5. Double Ended Queue
-6. Double Linked List
-7. Circular Linked List
+5. Double Linked List
+6. Double Ended Queue
+7. Circular Linked List - (Not implemented, as it is a variation of Double Linked List where tail can be connected to Head instead
+   of making the last node point to null. However, there are amazing problems based on Circular Linked List which one must try!
 8. Hashing for numerical and string values (Can be extended to Hash-Maps)
 9. Tree with BFS and DFS
 
@@ -19,7 +20,7 @@ the bullet sequence as per the list above.
 
 -I implemented it using linked list, it could have been done by array also.
 -Arrays would limit the size of stack, and would now allow dynamic size increase (that can be overcome by array resizing once array
-reaches the size limit, but it will waste memory if stack grows too much but is only larger marginally by the half of array size)
+ reaches the size limit, but it will waste memory if stack grows too much but is only larger marginally by the half of array size)
 -Linked list can grow and shrink as per need, but additional memory is used to maintain pointers to the next nodes
 
 3. Queue ######
