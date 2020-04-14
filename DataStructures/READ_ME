@@ -5,7 +5,9 @@ For ease of reading and record keeping, I am listing them down-
 2. Stack - DONE
 3. Queue - DONE
 4. Priority Queue - DONE
-5. Double Linked List
+5. Double Linked List - (Not implemented, as it is a simple variation of Single Linked List where we can add an additional 'prev'
+   pointed to the node, which will maintain track of previous node as is mainted for next node under 'next' pointer. Deletion of a
+   node can be either by taking index position from user, or based on a specific value of a node.)
 6. Double Ended Queue
 7. Circular Linked List - (Not implemented, as it is a variation of Double Linked List where tail can be connected to Head instead
    of making the last node point to null. However, there are amazing problems based on Circular Linked List which one must try!
