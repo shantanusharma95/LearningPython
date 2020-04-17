@@ -11,7 +11,7 @@ For ease of reading and record keeping, I am listing them down-
 6. Double Ended Queue
 7. Circular Linked List - (Not implemented, as it is a variation of Double Linked List where tail can be connected to Head instead
    of making the last node point to null. However, there are amazing problems based on Circular Linked List which one must try!
-8. Hashing for numerical and string values (Can be extended to Hash-Maps)
+8. Hashing for numerical and string values (Can be extended to Hash-Maps) - DONE
 9. Tree with BFS and DFS
 
 
@@ -34,4 +34,11 @@ the bullet sequence as per the list above.
 -The time for insertion is O(n) as comparison is done for priority of each element, but for deletion is O(1)
 -Imagine all elements with highest priority are on the left (tail) side and all with lower are towards right (head) side
 -Dequeuing is done at the left(tail) side
+
+8. Hash Table ######
+
+-Hash table (fast, synchronous) is implemented in the way of dictionaries in Python. Hence, I have only used some basic operations to 
+ depict the same.
+-The keys can created by us based on user input of values, via any alogorithm of our choice. In that case, the user will not have to 
+ enter the key. I have added an example of one such algorithm in the file, as pseudo code for key generation.
   
