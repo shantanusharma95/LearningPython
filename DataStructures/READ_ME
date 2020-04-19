@@ -8,7 +8,7 @@ For ease of reading and record keeping, I am listing them down-
 5. Double Linked List - (Not implemented, as it is a simple variation of Single Linked List where we can add an additional 'prev'
    pointed to the node, which will maintain track of previous node as is mainted for next node under 'next' pointer. Deletion of a
    node can be either by taking index position from user, or based on a specific value of a node.)
-6. Double Ended Queue
+6. Double Ended Queue - DONE
 7. Circular Linked List - (Not implemented, as it is a variation of Double Linked List where tail can be connected to Head instead
    of making the last node point to null. However, there are amazing problems based on Circular Linked List which one must try!
 8. Hashing for numerical and string values (Can be extended to Hash-Maps) - DONE
@@ -24,6 +24,7 @@ the bullet sequence as per the list above.
 -Arrays would limit the size of stack, and would now allow dynamic size increase (that can be overcome by array resizing once array
  reaches the size limit, but it will waste memory if stack grows too much but is only larger marginally by the half of array size)
 -Linked list can grow and shrink as per need, but additional memory is used to maintain pointers to the next nodes
+-Arrays, however can provide quick access as they are indexed, unlike Linked Lists.
 
 3. Queue ######
 
@@ -34,6 +35,10 @@ the bullet sequence as per the list above.
 -The time for insertion is O(n) as comparison is done for priority of each element, but for deletion is O(1)
 -Imagine all elements with highest priority are on the left (tail) side and all with lower are towards right (head) side
 -Dequeuing is done at the left(tail) side
+
+6. Double Queue ######
+-All operations have a time complexity of O(1), except of course, displaying the entire queue.
+-Implemented with a linked list
 
 8. Hash Table ######
 
