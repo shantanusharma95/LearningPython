@@ -1,6 +1,10 @@
 Under this directory, I have placed more directories. Each directory contains the code files along with an output log, where the time
-needed to run the program is recorded to depict the differences between serial and parallel program - also note, the code is doing the 
+taken to run the program is recorded to depict the differences between serial and parallel program - also note, the code is doing the 
 same thing in all cases.
+
+I have purposely uploaded my output logs - they can differ based on system configuration. I would recommend executing the code in a Python
+virtual environment. As I personally use Microsoft Visual Studio, below is the guide to begin with virtual environment on the same-
+https://code.visualstudio.com/docs/python/environments 
 
 Below is a summary of what each sub-directory contains.
 
