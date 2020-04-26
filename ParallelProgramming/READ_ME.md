@@ -17,7 +17,7 @@ Below is a summary of what each sub-directory contains.
     image is resized one after the another.
     
   - ##### MultipleThread
-    *Here I have used the "threading" module, and multiple threads are created, one for each image. 
+    * Here I have used the "threading" module, and multiple threads are created, one for each image. 
   
     * As I am downloading and resizing very limited no.of images, i.e. 26, it is ok to create the same no.of threads. But had the no.of
     images been a lot, say more than 100, this approach would be really bad as CPU will allocate resources to so many threads and at 
