@@ -1,0 +1,7 @@
+Under this directory, I have placed more directories. Each directory contains the code files along with an output log, where the time
+needed to run the program is recorded to depict the differences between serial and parallel program - also note, the code is doing the 
+same thing in all cases.
+
+Below is a summary of what each sub-directory contains.
+
+  - SerialRun : Contains the code which is executed serially
