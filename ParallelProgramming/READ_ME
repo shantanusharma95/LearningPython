@@ -7,6 +7,8 @@ virtual environment. As I personally use Microsoft Visual Studio, below is the g
 https://code.visualstudio.com/docs/python/environments 
 
 To run the code, save all python files, and under test_thumbnail_maker.py, run ">pytest"
+The above file is common under all sub-directories, but I have still kept it in each of those for the purpose of ease of using and if I 
+need to make changes to some of those in future.
 
 Below is a summary of what each sub-directory contains.
 
