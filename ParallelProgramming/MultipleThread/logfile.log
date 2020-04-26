@@ -1,0 +1,6 @@
+[MainThread, 2020-04-26 17:53:38,959, INFO] START make_thumbnails
+[MainThread, 2020-04-26 17:53:38,959, INFO] beginning image downloads
+[MainThread, 2020-04-26 17:53:41,514, INFO] downloaded 26 images in 2.5542363 seconds
+[MainThread, 2020-04-26 17:53:41,517, INFO] beginning image resizing
+[MainThread, 2020-04-26 17:53:46,306, INFO] created 26 thumbnails in 4.787401999999999 seconds
+[MainThread, 2020-04-26 17:53:46,307, INFO] END make_thumbnails in 7.347977900000001 seconds
