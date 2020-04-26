@@ -12,23 +12,26 @@ need to make changes to some of those in future.
 
 Below is a summary of what each sub-directory contains.
 
-  - #### SerialRun : Contains the code which is executed serially. All the images are downloaded one by one, one after the another - then each
+  - ##### SerialRun
+    * Contains the code which is executed serially. All the images are downloaded one by one, one after the another - then each
     image is resized one after the another.
     
-  - MultipleThread : Here I have used the "threading" module, and multiple threads are created, one for each image. 
+  - ##### MultipleThread
+    *Here I have used the "threading" module, and multiple threads are created, one for each image. 
   
-    As I am downloading and resizing very limited no.of images, i.e. 26, it is ok to create the same no.of threads. But had the no.of
+    * As I am downloading and resizing very limited no.of images, i.e. 26, it is ok to create the same no.of threads. But had the no.of
     images been a lot, say more than 100, this approach would be really bad as CPU will allocate resources to so many threads and at 
     some point, all resources can be exhausted and system can get stuck!
     
-    I have also implemented thread lock. As all threads can randomly access shared resources of a process, I have used the locking
+    * I have also implemented thread lock. As all threads can randomly access shared resources of a process, I have used the locking
     mechanism so that only 1 thread can access and update a shared resource - this way, each thread will update the correct shared
     resource value.
    
-  - MultipleThreadsInLimit : In this, I have limited the threads to 4 only for downloading purpose, i.e. instead of a new thread for 
+  - ##### MultipleThreadsInLimit
+    * In this, I have limited the threads to 4 only for downloading purpose, i.e. instead of a new thread for 
     downloading form each URL, now we will have only 4 threads downloading all the images, unlike done in the MultipleThread directory.
     
-    This gives us control over how many threads are active and keeps the CPU utilization within limits in case the no.of URLs increases.
+    * This gives us control over how many threads are active and keeps the CPU utilization within limits in case the no.of URLs increases.
     
-    Also, in this I use Queue - following the producer consumer concept. The use of thread locks was avoided as Queue internally 
+    * Also, in this I use Queue - following the producer consumer concept. The use of thread locks was avoided as Queue internally 
     handles thread synchronization. However, there were some minor but important checks, which I have explained in the code comments.
