@@ -35,3 +35,8 @@ Below is a summary of what each sub-directory contains.
     
     * Also, in this I use Queue - following the producer consumer concept. The use of thread locks was avoided as Queue internally 
     handles thread synchronization. However, there were some minor but important checks, which I have explained in the code comments.
+    
+  - ##### ProcessPool
+    * Here I make use of multiple processes via process pool to do the resizing of images parallely.
+    * The time taken to resize the images is considerably reduced as compared to the previous approaches - this can be noted in the 
+      logfile.
