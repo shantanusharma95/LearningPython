@@ -1,0 +1,55 @@
+
+[MainThread, 2020-04-28 23:37:16,454, INFO] START make_thumbnails
+[MainThread, 2020-04-28 23:37:27,417, INFO] resizing image pexels-photo-192454.jpeg 
+[MainThread, 2020-04-28 23:37:27,418, INFO] resizing image pexels-photo-134392.jpeg 
+[MainThread, 2020-04-28 23:37:27,458, INFO] resizing image pexels-photo-167921.jpeg 
+[MainThread, 2020-04-28 23:37:27,461, INFO] resizing image pexels-photo-48603.jpeg 
+[MainThread, 2020-04-28 23:37:27,469, INFO] resizing image pexels-photo-167300.jpeg 
+[MainThread, 2020-04-28 23:37:27,485, INFO] resizing image pexels-photo-173125.jpeg 
+[MainThread, 2020-04-28 23:37:27,537, INFO] resizing image pexels-photo-135130.jpeg 
+[MainThread, 2020-04-28 23:37:27,692, INFO] done resizing image pexels-photo-185934.jpeg 
+[MainThread, 2020-04-28 23:37:27,693, INFO] resizing image pexels-photo-207962.jpeg 
+[MainThread, 2020-04-28 23:37:27,760, INFO] done resizing image pexels-photo-207962.jpeg 
+[MainThread, 2020-04-28 23:37:27,761, INFO] resizing image pexels-photo-193038.jpeg 
+[MainThread, 2020-04-28 23:37:27,814, INFO] done resizing image pexels-photo-173125.jpeg 
+[MainThread, 2020-04-28 23:37:27,816, INFO] resizing image pexels-photo-193043.jpeg 
+[MainThread, 2020-04-28 23:37:27,824, INFO] done resizing image pexels-photo-48603.jpeg 
+[MainThread, 2020-04-28 23:37:27,825, INFO] resizing image pexels-photo-247917.jpeg 
+[MainThread, 2020-04-28 23:37:27,918, INFO] done resizing image pexels-photo-135130.jpeg 
+[MainThread, 2020-04-28 23:37:27,920, INFO] resizing image pexels-photo-247932.jpeg 
+[MainThread, 2020-04-28 23:37:27,922, INFO] done resizing image pexels-photo-167300.jpeg 
+[MainThread, 2020-04-28 23:37:27,924, INFO] resizing image pexels-photo-302899.jpeg 
+[MainThread, 2020-04-28 23:37:27,928, INFO] done resizing image pexels-photo-134392.jpeg 
+[MainThread, 2020-04-28 23:37:27,931, INFO] resizing image pexels-photo-265186.jpeg 
+[MainThread, 2020-04-28 23:37:27,992, INFO] done resizing image pexels-photo-192454.jpeg 
+[MainThread, 2020-04-28 23:37:27,995, INFO] resizing image pexels-photo-317383.jpeg 
+[MainThread, 2020-04-28 23:37:28,051, INFO] done resizing image pexels-photo-247917.jpeg 
+[MainThread, 2020-04-28 23:37:28,053, INFO] resizing image pexels-photo-320007.jpeg 
+[MainThread, 2020-04-28 23:37:28,150, INFO] done resizing image pexels-photo-167921.jpeg 
+[MainThread, 2020-04-28 23:37:28,153, INFO] resizing image pexels-photo-317156.jpeg 
+[MainThread, 2020-04-28 23:37:28,186, INFO] done resizing image pexels-photo-193038.jpeg 
+[MainThread, 2020-04-28 23:37:28,189, INFO] resizing image pexels-photo-322207.jpeg 
+[MainThread, 2020-04-28 23:37:28,215, INFO] done resizing image pexels-photo-265186.jpeg 
+[MainThread, 2020-04-28 23:37:28,217, INFO] resizing image pexels-photo-323503.jpeg 
+[MainThread, 2020-04-28 23:37:28,253, INFO] done resizing image pexels-photo-193043.jpeg 
+[MainThread, 2020-04-28 23:37:28,257, INFO] resizing image pexels-photo-324030.jpeg 
+[MainThread, 2020-04-28 23:37:28,278, INFO] done resizing image pexels-photo-320007.jpeg 
+[MainThread, 2020-04-28 23:37:28,280, INFO] resizing image pexels-photo-324655.jpeg 
+[MainThread, 2020-04-28 23:37:28,288, INFO] done resizing image pexels-photo-247932.jpeg 
+[MainThread, 2020-04-28 23:37:28,290, INFO] resizing image pexels-photo-324658.jpeg 
+[MainThread, 2020-04-28 23:37:28,391, INFO] done resizing image pexels-photo-302899.jpeg 
+[MainThread, 2020-04-28 23:37:28,393, INFO] resizing image pexels-photo-333529.jpeg 
+[MainThread, 2020-04-28 23:37:28,472, INFO] done resizing image pexels-photo-317383.jpeg 
+[MainThread, 2020-04-28 23:37:28,474, INFO] resizing image pexels-photo-325520.jpeg 
+[MainThread, 2020-04-28 23:37:28,475, INFO] done resizing image pexels-photo-317156.jpeg 
+[MainThread, 2020-04-28 23:37:28,477, INFO] resizing image pexels-photo-341520.jpeg 
+[MainThread, 2020-04-28 23:37:28,589, INFO] done resizing image pexels-photo-323503.jpeg 
+[MainThread, 2020-04-28 23:37:28,589, INFO] done resizing image pexels-photo-324655.jpeg 
+[MainThread, 2020-04-28 23:37:28,634, INFO] done resizing image pexels-photo-322207.jpeg 
+[MainThread, 2020-04-28 23:37:28,637, INFO] done resizing image pexels-photo-324030.jpeg 
+[MainThread, 2020-04-28 23:37:28,666, INFO] done resizing image pexels-photo-333529.jpeg 
+[MainThread, 2020-04-28 23:37:28,723, INFO] done resizing image pexels-photo-324658.jpeg 
+[MainThread, 2020-04-28 23:37:28,812, INFO] done resizing image pexels-photo-341520.jpeg 
+[MainThread, 2020-04-28 23:37:28,845, INFO] done resizing image pexels-photo-325520.jpeg 
+[MainThread, 2020-04-28 23:37:28,933, INFO] created 26  thumbnails in 1.7094611000000004 seconds
+[MainThread, 2020-04-28 23:37:28,934, INFO] END make_thumbnails in 11.656134600000001 seconds
