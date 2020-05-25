@@ -46,4 +46,9 @@ the bullet sequence as per the list above.
  depict the same.
 -The keys can created by us based on user input of values, via any alogorithm of our choice. In that case, the user will not have to 
  enter the key. I have added an example of one such algorithm in the file, as pseudo code for key generation.
+
+9. Binary Search Tree ######
+- BST including basic operations like insertion, deletion and searching of node.
+- BFS (Breadth First Search) traversal is included.
+- DFS (Depth First Search) traversals (Pre-order , In-order and Post-order) are included
   
