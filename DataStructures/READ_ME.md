@@ -12,7 +12,7 @@ For ease of reading and record keeping, I am listing them down-
 7. Circular Linked List - (Not implemented, as it is a variation of Double Linked List where tail can be connected to Head instead
    of making the last node point to null. However, there are amazing problems based on Circular Linked List which one must try!
 8. Hashing for numerical and string values (Can be extended to Hash-Maps) - DONE
-9. Tree with BFS and DFS
+9. Tree with BFS and DFS - DONE
 
 
 For my personal reference and future revisions, I am listing down more details about each implementation. The bullet number below follows
