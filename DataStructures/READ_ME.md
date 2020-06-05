@@ -28,28 +28,29 @@ the bullet sequence as per the list above.
 
 ##### 3. Queue
 
--The time for insertion and deletion is O(1) and for displaying the queue elements is O(n)
+* The time for insertion and deletion is O(1) and for displaying the queue elements is O(n)
 
 ##### 4. Priority Queue
 
--The time for insertion is O(n) as comparison is done for priority of each element, but for deletion is O(1)
--Imagine all elements with highest priority are on the left (tail) side and all with lower are towards right (head) side
--Dequeuing is done at the left(tail) side
+* The time for insertion is O(n) as comparison is done for priority of each element, but for deletion is O(1)
+* Imagine all elements with highest priority are on the left (tail) side and all with lower are towards right (head) side
+* Dequeuing is done at the left(tail) side
 
 ##### 6. Double Queue
 
--All operations have a time complexity of O(1), except of course, displaying the entire queue.
--Implemented with a linked list
+* All operations have a time complexity of O(1), except of course, displaying the entire queue.
+* Implemented with a linked list
 
 ##### 8. Hash Table
 
--Hash table (fast, synchronous) is implemented in the way of dictionaries in Python. Hence, I have only used some basic operations to 
+* Hash table (fast, synchronous) is implemented in the way of dictionaries in Python. Hence, I have only used some basic operations to 
  depict the same.
--The keys can created by us based on user input of values, via any alogorithm of our choice. In that case, the user will not have to 
+* The keys can created by us based on user input of values, via any alogorithm of our choice. In that case, the user will not have to 
  enter the key. I have added an example of one such algorithm in the file, as pseudo code for key generation.
 
 ##### 9. Binary Search Tree
-- BST including basic operations like insertion, deletion and searching of node.
-- BFS (Breadth First Search) traversal is included.
-- DFS (Depth First Search) traversals (Pre-order , In-order and Post-order) are included
+
+* BST including basic operations like insertion, deletion and searching of node.
+* BFS (Breadth First Search) traversal is included.
+* DFS (Depth First Search) traversals (Pre-order , In-order and Post-order) are included
   
