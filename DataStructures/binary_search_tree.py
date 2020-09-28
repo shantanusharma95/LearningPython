@@ -148,6 +148,17 @@ class binarySearchTree:
                 continue
             elif (not q) and tmp==None:
                 return
+            
+        # alternate solution
+        # while True:
+        #    while temp is not None:
+        #        stk.append(temp)
+        #        temp = temp.left
+        #    
+        #    if stk and temp==None:
+        #        temp=stk.pop()
+        #        print(temp.value," ")
+        #        temp = temp.right
 
     #peek function used during post order traversal
     def peek(self, stk): 
