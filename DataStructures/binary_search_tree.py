@@ -116,23 +116,36 @@ class binarySearchTree:
         print("No elements in the tree!")
 
     def df_preTraversal(self):
-        q = []
-        if self.root==None:
-            print("Empty tree!")
-            return
-        else:
-            tmp = self.root
-            while True:
-                while tmp!=None:
-                    if tmp.right:
-                        q.append(tmp.right)
-                    print(tmp.data)
-                    tmp=tmp.left
-                if q:
-                    tmp=q.pop()
-                    continue
-                else:
-                    return
+        temp = self.root
+        stk = []
+        while True:
+            while temp is not None:
+                stk.append(temp)
+                temp = temp.left
+            
+            if stk and temp==None:
+                temp=stk.pop()
+                print(temp.value," ")
+                temp = temp.right
+                
+        # Alternate pre-order solution
+        # q = []
+        # if self.root==None:
+        #     print("Empty tree!")
+        #     return
+        # else:
+        #     tmp = self.root
+        #     while True:
+        #         while tmp!=None:
+        #             if tmp.right:
+        #                 q.append(tmp.right)
+        #             print(tmp.data)
+        #             tmp=tmp.left
+        #         if q:
+        #             tmp=q.pop()
+        #             continue
+        #         else:
+        #             return
 
     def df_inTraversal(self):
         tmp = self.root
@@ -149,7 +162,7 @@ class binarySearchTree:
             elif (not q) and tmp==None:
                 return
             
-        # alternate solution
+        # Alternate in-order solution
         # while True:
         #    while temp is not None:
         #        stk.append(temp)
