@@ -128,24 +128,7 @@ class binarySearchTree:
                 print(temp.value," ")
                 temp = temp.right
                 
-        # Alternate pre-order solution
-        # q = []
-        # if self.root==None:
-        #     print("Empty tree!")
-        #     return
-        # else:
-        #     tmp = self.root
-        #     while True:
-        #         while tmp!=None:
-        #             if tmp.right:
-        #                 q.append(tmp.right)
-        #             print(tmp.data)
-        #             tmp=tmp.left
-        #         if q:
-        #             tmp=q.pop()
-        #             continue
-        #         else:
-        #             return
+        # Alternate solution available at the end of file
 
     def df_inTraversal(self):
         tmp = self.root
@@ -161,17 +144,7 @@ class binarySearchTree:
                 continue
             elif (not q) and tmp==None:
                 return
-            
-        # Alternate in-order solution
-        # while True:
-        #    while temp is not None:
-        #        stk.append(temp)
-        #        temp = temp.left
-        #    
-        #    if stk and temp==None:
-        #        temp=stk.pop()
-        #        print(temp.value," ")
-        #        temp = temp.right
+        # Alternate solution available at the end of file
 
     #peek function used during post order traversal
     def peek(self, stk): 
@@ -244,3 +217,36 @@ def main():
 
 if __name__=='__main__':
     main()
+    
+# END OF PROGRAM - Alternate functions below
+
+        # Alternate in-order solution
+        # while True:
+        #    while temp is not None:
+        #        stk.append(temp)
+        #        temp = temp.left
+        #    
+        #    if stk and temp==None:
+        #        temp=stk.pop()
+        #        print(temp.value," ")
+        #        temp = temp.right
+        
+        
+        # Alternate pre-order solution
+        # q = []
+        # if self.root==None:
+        #     print("Empty tree!")
+        #     return
+        # else:
+        #     tmp = self.root
+        #     while True:
+        #         while tmp!=None:
+        #             if tmp.right:
+        #                 q.append(tmp.right)
+        #             print(tmp.data)
+        #             tmp=tmp.left
+        #         if q:
+        #             tmp=q.pop()
+        #             continue
+        #         else:
+        #             return
