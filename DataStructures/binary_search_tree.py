@@ -37,7 +37,6 @@ class binarySearchTree:
         return
 
     def bf_traversal(self):
-
         q = Queue()
         if self.root==None:
             print("Empty tree!")
@@ -52,69 +51,56 @@ class binarySearchTree:
                 if tmp.right!=None:
                     q.put(tmp.right)
         del(q)
-
-    def deleteItem(self,data):
+    
+    # Helper function for node deletion
+    def getMin(self,temp):
+        while temp.left is not None:
+            temp=temp.left
+        return temp.value
+    
+    def deleteItem(self,val,par=None):
         if self.root:
-            tmp=self.root
-            tmp_prev=None
-            while tmp:
-                if tmp.data == data:
-                    #Case 1 - deletion node has no child
-                    if (tmp.right==None and tmp.left==None) and tmp_prev!=None:
-                        if tmp.data<tmp_prev.data:
-                            tmp_prev.left=None
-                        else:
-                            tmp_prev.right=None
-                        tmp=None
+            if par==None:
+                temp = self.root
+            else:
+                temp = par
+            while temp is not None:
+                if val>temp.value:
+                    par=temp
+                    temp=temp.right
+                elif val<temp.value:
+                    par=temp
+                    temp=temp.left
+                else:
+                    # if node to be deleted has both children, replace its value by inorder successor and remove successor node
+                    if temp.left is not None and temp.right is not None:
+                        print("hi")
+                        temp.value = self.getMin(temp.right)
+                        self.deleteItem(temp.value,temp.right)
+                        return
 
-                    elif (tmp.right==None and tmp.left==None) and tmp_prev==None:
-                        self.root=tmp=None
+                    # if node to be delete is root, and has just one child
+                    elif par==None:
+                        if temp.left is not None:
+                            temp.value=temp.left.value
+                            temp.left=temp.left.left
+                            temp.right=temp.left.right
+                        if temp.right is not None:
+                            temp.value=temp.right.value
+                            temp.left=temp.right.left
+                            temp.right=temp.right.right
 
-                    #Case 2 - deletion node has just one child
-                    elif (tmp.right and not(tmp.left)):
-                        if tmp==self.root:
-                            self.root=self.root.right
-                            print("Value deleted!\n")
-                            return
-                        tmp.data=tmp.right.data
-                        tmp.right=None
-                    elif (tmp.left and not(tmp.right)):
-                        if tmp==self.root:
-                            self.root=self.root.left
-                            print("Value deleted!\n")
-                            return
-                        tmp.data=tmp.left.data
-                        tmp.left=None
-
-                    #Case 3 - deletion node has both left and right children
-                    else:
-                        tmp_root = tmp
-                        tmp_prev = tmp
-                        tmp = tmp.right
-
-                        while tmp.left!=None:
-                            tmp_prev = tmp
-                            tmp = tmp.left
-                        tmp_root.data = tmp.data
-                        if tmp.right:
-                            tmp_prev.left = tmp.right                                
-                        else:
-                            tmp_prev.left = None
-                        del(tmp)
-                    
-                    print("Value deleted!\n")
+                    # if node has just one child, but is not root node
+                    elif par.left == temp:
+                        par.left = temp.left if temp.left is not None else temp.right
+                    elif par.right == temp:
+                        par.right = temp.left if temp.left is not None else temp.right
+                    print("\nNode deleted!\n")
                     return
-                elif data<tmp.data:
-                    tmp_prev=tmp
-                    tmp=tmp.left
-
-                elif data>tmp.data:
-                    tmp_prev=tmp
-                    tmp=tmp.right       
-
-            print("Element not found!")
-        print("No elements in the tree!")
-
+            print("\nValue not found!\n")
+            return
+        # Alternate solution available at the end of file
+        
     def df_preTraversal(self):
         temp = self.root
         stk = []
@@ -126,8 +112,7 @@ class binarySearchTree:
             if stk and temp==None:
                 temp=stk.pop()
                 print(temp.value," ")
-                temp = temp.right
-                
+                temp = temp.right     
         # Alternate solution available at the end of file
 
     def df_inTraversal(self):
@@ -250,3 +235,67 @@ if __name__=='__main__':
         #             continue
         #         else:
         #             return
+        
+        
+        # Alternate deletion, longer code without helper function
+        #         def deleteItem(self,data):
+        #         if self.root:
+        #             tmp=self.root
+        #             tmp_prev=None
+        #             while tmp:
+        #                 if tmp.data == data:
+        #                     #Case 1 - deletion node has no child
+        #                     if (tmp.right==None and tmp.left==None) and tmp_prev!=None:
+        #                         if tmp.data<tmp_prev.data:
+        #                             tmp_prev.left=None
+        #                         else:
+        #                             tmp_prev.right=None
+        #                         tmp=None
+
+        #                     elif (tmp.right==None and tmp.left==None) and tmp_prev==None:
+        #                         self.root=tmp=None
+
+        #                     #Case 2 - deletion node has just one child
+        #                     elif (tmp.right and not(tmp.left)):
+        #                         if tmp==self.root:
+        #                             self.root=self.root.right
+        #                             print("Value deleted!\n")
+        #                             return
+        #                         tmp.data=tmp.right.data
+        #                         tmp.right=None
+        #                     elif (tmp.left and not(tmp.right)):
+        #                         if tmp==self.root:
+        #                             self.root=self.root.left
+        #                             print("Value deleted!\n")
+        #                             return
+        #                         tmp.data=tmp.left.data
+        #                         tmp.left=None
+
+        #                     #Case 3 - deletion node has both left and right children
+        #                     else:
+        #                         tmp_root = tmp
+        #                         tmp_prev = tmp
+        #                         tmp = tmp.right
+
+        #                         while tmp.left!=None:
+        #                             tmp_prev = tmp
+        #                             tmp = tmp.left
+        #                         tmp_root.data = tmp.data
+        #                         if tmp.right:
+        #                             tmp_prev.left = tmp.right                                
+        #                         else:
+        #                             tmp_prev.left = None
+        #                         del(tmp)
+
+        #                     print("Value deleted!\n")
+        #                     return
+        #                 elif data<tmp.data:
+        #                     tmp_prev=tmp
+        #                     tmp=tmp.left
+
+        #                 elif data>tmp.data:
+        #                     tmp_prev=tmp
+        #                     tmp=tmp.right       
+
+        #             print("Element not found!")
+        #         print("No elements in the tree!")
