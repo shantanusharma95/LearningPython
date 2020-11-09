@@ -212,6 +212,8 @@ if __name__=='__main__':
         #        temp=stk.pop()
         #        print(temp.value," ")
         #        temp = temp.right
+        #    elif not stk:
+        #        return
         
         
         # Alternate pre-order solution
