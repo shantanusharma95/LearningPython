@@ -102,17 +102,14 @@ class binarySearchTree:
         # Alternate solution available at the end of file
         
     def df_preTraversal(self):
-        temp = self.root
-        stk = []
-        while True:
+        stk = [self.root]
+        while len(stk)>0:
+            temp = stk.pop()
             while temp is not None:
-                stk.append(temp)
-                temp = temp.left
-            
-            if stk and temp==None:
-                temp=stk.pop()
-                print(temp.value," ")
-                temp = temp.right     
+                if temp.right is not None:
+                    stk.append(temp.right)
+                print(temp.data)
+                temp = temp.left    
         # Alternate solution available at the end of file
 
     def df_inTraversal(self):
