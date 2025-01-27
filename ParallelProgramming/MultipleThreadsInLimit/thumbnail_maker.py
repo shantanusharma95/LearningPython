@@ -65,7 +65,7 @@ class ThumbnailMakerService(object):
             """
             After downloading all images, we added None to the queue.
             The below condition will check if the filename is None,i.e. when the None item is read,
-            it will no there are no more items in the queue and the loop will break.
+            it will know there are no more items in the queue and the loop will break.
             """
             if filename:
                 filename = self.img_queue.get()
