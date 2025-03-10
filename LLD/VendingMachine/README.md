@@ -1,4 +1,5 @@
 Requirements
+
 The vending machine should support multiple products with different prices and quantities.
 The machine should accept coins and notes of different denominations.
 The machine should dispense the selected product and return change if necessary.
@@ -8,6 +9,7 @@ The machine should provide an interface for restocking products and collecting m
 The machine should handle exceptional scenarios, such as insufficient funds or out-of-stock products.
 
 Classes, Interfaces and Enumerations
+
 The Product class represents a product in the vending machine, with properties such as name and price.
 The Coin and Note enums represent the different denominations of coins and notes accepted by the vending machine.
 The Inventory class manages the available products and their quantities in the vending machine. It uses a concurrent hash map to ensure thread safety.
