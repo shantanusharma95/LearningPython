@@ -26,7 +26,7 @@ class VendingMachine:
     self.currentState.insertCoin(coin)
   def insertNote(self, note):
     self.currentState.insertNote(note)
-  def dispenseProduct(self, product)
+  def dispenseProduct(self, product):
     self.currentState.dispenseProduct()
   def returnChange(self):
     self.currentState.returnChange()
